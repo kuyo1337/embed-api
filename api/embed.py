@@ -30,7 +30,7 @@ class handler(BaseHTTPRequestHandler):
 <meta property="theme-color" content="#{color}">
 <meta property="og:site_name" content="{provider_name}">
 
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{description}">
 <meta name="twitter:image" content="{image}">
