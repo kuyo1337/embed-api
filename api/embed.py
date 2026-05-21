@@ -11,7 +11,14 @@ class handler(BaseHTTPRequestHandler):
         description = query.get("description", [""])[0]
         color = query.get("color", ["5865F2"])[0]
         image = query.get("image", [""])[0]
+        thumbnail = query.get("thumbnail", [""])[0]
         url = query.get("url", [""])[0]
+        author_name = query.get("author_name", [""])[0]
+        author_url = query.get("author_url", [""])[0]
+        author_icon = query.get("author_icon", [""])[0]
+        footer_text = query.get("footer_text", [""])[0]
+        footer_icon = query.get("footer_icon", [""])[0]
+        timestamp = query.get("timestamp", [""])[0]
         provider_name = query.get("provider_name", [""])[0]
         provider_url = query.get("provider_url", ["https://google.com"])[0]
 
@@ -33,7 +40,7 @@ class handler(BaseHTTPRequestHandler):
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{description}">
-<meta name="twitter:image" content="{image}">
+<meta name="twitter:image" content="{thumbnail or image}">
 
 <title>{title}</title>
 
